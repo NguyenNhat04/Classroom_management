@@ -1,4 +1,4 @@
-const Configs = require('./../../configs/Constants')
+const Configs = require('./../../configs/Constants')//import module chua ham so
 const jwt = require('jsonwebtoken');
 const hash = require('sha256')
 const { v4: uuidv4 } = require('uuid');
