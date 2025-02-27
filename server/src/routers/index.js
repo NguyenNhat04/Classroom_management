@@ -1,13 +1,10 @@
-git pull origin main"use strict";
+"use strict";
 
 const express = require("express");
-
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  return res.status(200).json({
-    message: "Welcome Classroom",
-  })
-});
+router.use("/v1/api/user", require("./user/index"));
+
+router.use("/v1/api", require("./access/index"));
 
 module.exports = router;
